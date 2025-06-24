@@ -7,8 +7,8 @@ type Props = {};
 // Exportamos el componente de React.
 export default function Header({}: Props) {
   return (
-    <header className="bg-[linear-gradient(90deg,rgba(42,123,155,1)_41%,rgba(95,200,130,1)_73%)] text-white shadow-md rounded-full m-5 px-10 py-5 h-18">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="bg-[linear-gradient(90deg,rgba(42,123,155,1)_41%,rgba(95,200,130,1)_73%)] text-white shadow-md rounded-full flex justify-center items-center my-8 mx-15 px-6 py-2">
+      <div className="container flex justify-between items-center self-center">
         {/* Lado izquierdo: Logo o Nombre */}
         <a href="/" className="text-2xl font-bold text-shadow-white hover:text-green-400 transition-colors">
           Hernan Gonzalo Ocaranza
@@ -25,6 +25,11 @@ export default function Header({}: Props) {
             <li>
               <a href="/sobre-mi" className="hover:text-cyan-800 transition-colors">
                 Sobre Mí
+              </a>
+            </li>
+            <li>
+              <a href="/blog" className="hover:text-cyan-800 transition-colors">
+                Blog
               </a>
             </li>
             <li>

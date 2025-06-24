@@ -1,6 +1,7 @@
 ---
-import Hero from '../components/Hero.astro';
-import Header from '../components/Header.tsx';
+import Projects from '../components/custom/Projects.astro';
+import Hero from '../components/custom/Hero.astro';
+import Header from '../components/base/Header';
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 
@@ -11,4 +12,5 @@ import '../styles/global.css';
 <Layout>
 	<Header client:load />
 	<Hero />
+	<Projects/>
 </Layout>

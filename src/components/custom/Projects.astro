@@ -1,0 +1,62 @@
+---
+import { Card } from  '../base/Card';
+
+const proyectosData = [
+  {
+    title: 'Proyecto 1',
+    description: 'Descripción del proyecto 1',
+    imageUrl: 'https://via.placeholder.com/150',
+    tags: ['HTML', 'CSS', 'JavaScript']
+  },
+  {
+    title: 'Proyecto 2',
+    description: 'Descripción del proyecto 2',
+    imageUrl: 'https://via.placeholder.com/150',
+    tags: ['React', 'Node.js']
+  },
+  {
+    title: 'Proyecto 3',
+    description: 'Descripción del proyecto 3',
+    imageUrl: 'https://via.placeholder.com/150',
+    tags: ['Vue.js', 'Firebase']
+  },
+  {
+    title: 'Proyecto 4',
+    description: 'Descripción del proyecto 4',
+    imageUrl: 'https://via.placeholder.com/150',
+    tags: ['Angular', 'TypeScript']
+  },
+  {
+    title: 'Proyecto 5',
+    description: 'Descripción del proyecto 5',
+    imageUrl: 'https://via.placeholder.com/150',
+    tags: ['Angular', 'TypeScript']
+  },
+  {
+    title: 'Proyecto 6',
+    description: 'Descripción del proyecto 6',
+    imageUrl: 'https://via.placeholder.com/150',
+    tags: ['Angular', 'TypeScript']
+  }
+];
+---
+
+
+<section class="w-full bg-amber-400">
+    <div class="container w-full flex justify-center items-center m-25 gap-4 p-4">
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+      
+      {proyectosData.map(proyecto => (
+        <Card
+          title={proyecto.title}
+          description={proyecto.description}
+          imageUrl={proyecto.imageUrl}
+          tags={proyecto.tags}
+        />
+      ))}
+    </div>
+
+        </div>
+    </div>
+
+</section>

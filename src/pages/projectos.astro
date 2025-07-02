@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Header from '../components/base/Header';
+
+import Projects from '../components/custom/Projects.astro';
+import '../styles/global.css';
+---
+
+<Layout>
+	<Header client:load />
+	<Projects/>
+</Layout>
+
+

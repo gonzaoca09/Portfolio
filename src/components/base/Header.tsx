@@ -18,12 +18,12 @@ export default function Header({}: Props) {
         <nav>
           <ul className="flex space-x-6">
             <li>
-              <a href="/proyectos" className="hover:text-cyan-800 transition-colors">
+              <a href="/projectos" className="hover:text-cyan-800 transition-colors">
                 Proyectos
               </a>
             </li>
             <li>
-              <a href="/sobre-mi" className="hover:text-cyan-800 transition-colors">
+              <a href="/sobreMi" className="hover:text-cyan-800 transition-colors">
                 Sobre Mí
               </a>
             </li>

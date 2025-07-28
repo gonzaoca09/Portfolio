@@ -1,10 +1,18 @@
-<section>
-    <div class="container">
-        <h1>Sobre Mí</h1>
-        <p>Hola, soy Hernan Gonzalo Ocaranza, un apasionado desarrollador web.</p>
-        <p>Me especializo en crear experiencias web atractivas y funcionales.</p>
-    </div>
-</section>
+---
+import Header from '../components/base/Header';
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="HGO - Sobre Mi">
+    <section>
+        <div class="container">
+            <h1>Sobre Mi</h1>
+            <p>Hola, soy Hernan Gonzalo Ocaranza, un apasionado desarrollador web.</p>
+            <p>Me especializo en crear experiencias web atractivas y funcionales.</p>
+        </div>
+    </section>
+</Layout>
 
 <style>
     section {
@@ -28,77 +36,3 @@
         margin: auto;
         padding: 1rem;
     }
-    @media (max-width: 600px) {
-        section {
-            padding: 1rem;
-        }
-        h1 {
-            font-size: 1.5rem;
-        }
-    }
-    @media (min-width: 601px) {
-        section {
-            padding: 2rem;
-        }
-        h1 {
-            font-size: 2rem;
-        }
-    }
-    @media (min-width: 1024px) {
-        section {
-            padding: 3rem;
-        }
-        h1 {
-            font-size: 2.5rem;
-        }
-    }
-    @media (min-width: 1280px) {
-        section {
-            padding: 4rem;
-        }
-        h1 {
-            font-size: 3rem;
-        }
-    }
-    @media (min-width: 1536px) {
-        section {
-            padding: 5rem;
-        }
-        h1 {
-            font-size: 3.5rem;
-        }
-    }
-    @media (min-width: 1536px) {
-        section {
-            padding: 5rem;
-        }
-        h1 {
-            font-size: 3.5rem;
-        }
-    }
-
-    @media (min-width: 1920px) {
-        section {
-            padding: 6rem;
-        }
-        h1 {
-            font-size: 4rem;
-        }
-    }
-    @media (min-width: 2560px) {
-        section {
-            padding: 8rem;
-        }
-        h1 {
-            font-size: 5rem;
-        }
-    }
-    @media (min-width: 3840px) {
-        section {
-            padding: 10rem;
-        }
-        h1 {
-            font-size: 6rem;
-        }
-    }
-    

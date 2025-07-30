@@ -3,49 +3,36 @@ import { Card } from  '../base/Card';
 
 const proyectosData = [
   {
-    title: 'Proyecto 1',
-    description: 'Descripción del proyecto 1',
-    imageUrl: 'https://via.placeholder.com/150',
-    tags: ['HTML', 'CSS', 'JavaScript']
+    title: 'Siguiendo Las patitas',
+    description: ' Un sitio web para una protectora de animales, donde puedes adoptar y donar. lorem  ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+    imageUrl: 'https://placehold.co/100x100',
+    tags: ['React', 'Node.js', 'MongoDB'],
   },
   {
-    title: 'Proyecto 2',
-    description: 'Descripción del proyecto 2',
-    imageUrl: 'https://via.placeholder.com/150',
-    tags: ['React', 'Node.js']
+    title: 'Mi Proyecto Personal',
+    description: 'Un proyecto personal que estoy desarrollando para aprender más sobre programación.',
+    imageUrl: 'https://placehold.co/100x100',
+    tags: ['HTML', 'CSS', 'JavaScript'],
   },
-  {
-    title: 'Proyecto 3',
-    description: 'Descripción del proyecto 3',
-    imageUrl: 'https://via.placeholder.com/150',
-    tags: ['Vue.js', 'Firebase']
-  },
-  {
-    title: 'Proyecto 4',
-    description: 'Descripción del proyecto 4',
-    imageUrl: 'https://via.placeholder.com/150',
-    tags: ['Angular', 'TypeScript']
-  },
-  {
-    title: 'Proyecto 5',
-    description: 'Descripción del proyecto 5',
-    imageUrl: 'https://via.placeholder.com/150',
-    tags: ['Angular', 'TypeScript']
-  },
-  {
-    title: 'Proyecto 6',
-    description: 'Descripción del proyecto 6',
-    imageUrl: 'https://via.placeholder.com/150',
-    tags: ['Angular', 'TypeScript']
-  }
 ];
 ---
 
 
-<section class="w-full bg-amber-400">
-    <div class="container w-full flex justify-center items-center m-25 gap-4 p-4">
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
-      
+<section class="w-full mx-auto">
+  <div class="w-auto flex flex-col justify-center items-center pt-14">
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Proyectos</h2>
+    </div>
+    <div>
+      <p class="text-center w-lg text-b">
+        Aquí puedes encontrar una colección de proyectos destacados que he desarrollado. Cada proyecto refleja mis habilidades y mi pasión por la programación. Haz clic en cada tarjeta para obtener más detalles sobre cada uno.
+      </p>
+    </div>
+  </div>
+  
+  <div class="w-full flex justify-center items-center pt-15 mb-15 px-4">
+    <div class="flex gap-10 ">
+
       {proyectosData.map(proyecto => (
         <Card
           title={proyecto.title}
@@ -55,8 +42,5 @@ const proyectosData = [
         />
       ))}
     </div>
-
-        </div>
-    </div>
-
+  </div>
 </section>
